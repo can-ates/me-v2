@@ -2,9 +2,11 @@ import type { Metadata } from 'next';
 import { Sora } from 'next/font/google';
 import './globals.css';
 
+import Transition from './components/Transition';
 import Nav from './components/Nav';
 import Header from './components/Header';
 import TopLeftImg from './components/TopLeftImg';
+import Motion from './components/Motion';
 
 const sora = Sora({
   subsets: ['latin'],
@@ -31,7 +33,7 @@ export default function RootLayout({
           <TopLeftImg />
           <Nav />
           <Header />
-          {children}
+          <Motion>{children}</Motion>
         </div>
       </body>
     </html>
