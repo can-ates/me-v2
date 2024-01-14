@@ -56,7 +56,7 @@ export default function Home() {
         {/* bg img */}
         <div className="translate-z-0 absolute h-full w-full bg-none mix-blend-color-dodge xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat"></div>
         {/* particles */}
-        <div>Particles</div>
+        <ParticlesContainer />
         {/* avatar img */}
         <motion.div
           variants={fadeIn('up', 0.5)}
