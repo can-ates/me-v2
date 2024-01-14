@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Sora } from 'next/font/google';
 import './globals.css';
 
-import Transition from './components/Transition';
 import Nav from './components/Nav';
 import Header from './components/Header';
 import TopLeftImg from './components/TopLeftImg';

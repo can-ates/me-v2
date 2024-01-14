@@ -1,3 +1,4 @@
+'use client';
 const Work = () => {
   return <div>Work</div>;
 };
