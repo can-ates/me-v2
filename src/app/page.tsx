@@ -21,8 +21,8 @@ export default function Home() {
             exit="hidden"
             className="h1"
           >
-            Transforming Ideas <br /> Into{' '}
-            <span className="text-accent">Digital Reality</span>
+            Product-Oriented <br />{' '}
+            <span className="text-accent">Software Engineer</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p
@@ -32,9 +32,11 @@ export default function Home() {
             exit="hidden"
             className="mx-auto mb-10 max-w-sm xl:mx-0 xl:mb-16 xl:max-w-xl"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-            deserunt soluta eaque recusandae voluptatum consectetur neque nemo?
-            Expedita, earum natus.
+            Specializing in product development, I blend a deep understanding of
+            market needs and user experience with expertise in front-end
+            technologies. My career is marked by a focus on creating impactful,
+            user-centric products, where innovative problem-solving and
+            strategic product thinking are at the forefront.
           </motion.p>
           {/* btn */}
           <div className="relative z-10 flex justify-center xl:hidden">
