@@ -21,7 +21,7 @@ export default function Home() {
             exit="hidden"
             className="h1"
           >
-            Product-Oriented <br />{' '}
+            Product-Driven <br />{' '}
             <span className="text-accent">Software Engineer</span>
           </motion.h1>
           {/* subtitle */}
@@ -32,11 +32,13 @@ export default function Home() {
             exit="hidden"
             className="mx-auto mb-10 max-w-sm xl:mx-0 xl:mb-16 xl:max-w-xl"
           >
-            Specializing in product development, I blend a deep understanding of
-            market needs and user experience with expertise in front-end
-            technologies. My career is marked by a focus on creating impactful,
-            user-centric products, where innovative problem-solving and
-            strategic product thinking are at the forefront.
+            Deeply passionate about front-end development, I've honed my skills
+            in JavaScript to create seamless, accessible user experiences. My
+            journey in tech is defined by a commitment to innovation,
+            mentorship, and a collaborative spirit. With a foundation in both
+            front and back-end technologies, I continuously strive for
+            excellence, leveraging my product engineering background to push
+            boundaries.
           </motion.p>
           {/* btn */}
           <div className="relative z-10 flex justify-center xl:hidden">

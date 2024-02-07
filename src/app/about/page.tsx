@@ -120,8 +120,8 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            Something <span className="text-accent">??????</span> Lorem, ipsum
-            dolor.
+            Focus on delivering seamless, intuitive
+            <span className="text-accent"> user experiences.</span>
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
@@ -130,9 +130,9 @@ const About = () => {
             exit="hidden"
             className="mx-auto mb-6 max-w-[500px] px-2 xl:mx-0 xl:mb-12 xl:px-0"
           >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
-            blanditiis? Nulla est dignissimos in alias, quisquam excepturi
-            maiores placeat quam!
+            4 years ago, I began creating impactful, user-centric software
+            products. Along the way, I've honed my skills in both front and
+            back-end development.
           </motion.p>
           {/* counters */}
           <motion.div
@@ -159,6 +159,15 @@ const About = () => {
                 </div>
                 <div className="max-w-[100px] text-xs uppercase leading-[1.4] tracking-[1px]">
                   Finished projects
+                </div>
+              </div>
+              {/* satisfied */}
+              <div className="relative flex-1 after:absolute after:right-0 after:top-0 after:h-full after:w-[1px] after:bg-white/10">
+                <div className="mb-2 text-2xl font-extrabold text-accent xl:text-3xl">
+                  Countless
+                </div>
+                <div className="max-w-[100px] text-xs uppercase leading-[1.4] tracking-[1px]">
+                  Satisfied Users
                 </div>
               </div>
             </div>

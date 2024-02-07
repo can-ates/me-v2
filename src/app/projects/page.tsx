@@ -47,6 +47,7 @@ const Work = () => {
           </motion.div>
         </div>
       </div>
+      <Bulb />
     </div>
   );
 };
