@@ -3,21 +3,23 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import CountUp from 'react-countup';
 
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaWordpress,
-  FaFigma,
-} from 'react-icons/fa';
+import { FaHtml5, FaCss3, FaNodeJs, FaReact, FaNpm } from 'react-icons/fa';
 
 import {
   SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
+  SiJavascript,
+  SiGatsby,
+  SiRedux,
+  SiTypescript,
+  SiTailwindcss,
+  SiStorybook,
+  SiPlaywright,
+  SiSocketdotio,
+  SiWebpack,
+  SiEslint,
 } from 'react-icons/si';
+
+import { PiFileSqlDuotone } from 'react-icons/pi';
 
 import Avatar from '../components/Avatar';
 import Circles from '../components/Circles';
@@ -29,33 +31,31 @@ const aboutData = [
     title: 'skills',
     info: [
       {
-        title: 'Web Development',
+        title: 'Languages',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <FaHtml5 color="#ffaa02" />,
+          <FaCss3 color="#02e9ff" />,
+          <SiJavascript color="#FFFF00" />,
+          <SiTypescript color="#01FFFF" />,
         ],
       },
       {
-        title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
-      },
-    ],
-  },
-  {
-    title: 'projects',
-    info: [
-      {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
-      },
-      {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
+        title: 'Technologies',
+        icons: [
+          <FaReact color="#01FFFF" />,
+          <SiRedux color="#FF00FF" />,
+          <SiNextdotjs />,
+          <SiGatsby color="#FF00FF" />,
+          <FaNodeJs color="#82CD2B" />,
+          <SiTailwindcss color="#01FFFF" />,
+          <SiStorybook color="#FF4B88" />,
+          <SiPlaywright color="#57C15D" />,
+          <SiSocketdotio />,
+          <PiFileSqlDuotone />,
+          <FaNpm color="#C53736" />,
+          <SiWebpack color="#5599C8" />,
+          <SiEslint />,
+        ],
       },
     ],
   },
@@ -63,33 +63,16 @@ const aboutData = [
     title: 'experience',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Front End Engineer @ Jotform',
+        stage: 'Apr 2021 - Present',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
+        title: 'Front End Developer Intern @ Jotform',
+        stage: 'Jan 2021 - Mar 2021',
       },
       {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
-      },
-    ],
-  },
-  {
-    title: 'credentials',
-    info: [
-      {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
-      },
-      {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
-      },
-      {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'Front End Developer Intern @ VBT',
+        stage: 'Jun 2019 - Aug 2019',
       },
     ],
   },
@@ -196,19 +179,30 @@ const About = () => {
           </div>
           <div className="flex flex-col items-center gap-y-2 py-2 xl:items-start xl:gap-y-4 xl:py-6">
             {aboutData[index].info.map((item, itemIndex) => {
+              const dataSection = aboutData[index].title;
               return (
                 <div
                   key={itemIndex}
-                  className="flex max-w-max flex-1 flex-col items-center gap-x-2 text-white/60 md:flex-row"
+                  className="flex max-w-max flex-1 flex-col flex-wrap items-center gap-x-4 gap-y-4 text-white/60 md:flex-row"
                 >
                   {/* title */}
-                  <div className="mb-2 font-light md:mb-0">{item.title}</div>
+                  <div
+                    className={`mb-2 ${dataSection !== 'experience' ? 'mr-3' : ''} text-lg font-light md:mb-0`}
+                  >
+                    {item.title}
+                  </div>
                   <div className="hidden md:flex">-</div>
                   <div>{item.stage}</div>
                   <div className="flex gap-x-4"></div>
                   {/* icons */}
                   {item.icons?.map((icon, itemIndex) => {
-                    return <div className="text-2xl text-white">{icon}</div>;
+                    return (
+                      <div
+                        className={`${itemIndex === 0 ? '-ml-6' : ''} text-3xl text-white`}
+                      >
+                        {icon}
+                      </div>
+                    );
                   })}
                 </div>
               );

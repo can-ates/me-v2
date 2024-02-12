@@ -35,8 +35,7 @@ export default function Home() {
             Deeply passionate about front-end development, I've honed my skills
             in JavaScript to create seamless, accessible user experiences. My
             journey in tech is defined by a commitment to innovation,
-            mentorship, and a collaborative spirit. With a foundation in both
-            front and back-end technologies, I continuously strive for
+            mentorship, and a collaborative spirit. I continuously strive for
             excellence, leveraging my product engineering background to push
             boundaries.
           </motion.p>
