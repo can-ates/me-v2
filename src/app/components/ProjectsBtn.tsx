@@ -15,8 +15,8 @@ const ProjectsBtn = () => {
           src={'/my-resume.png'}
           alt=""
           className="h-full max-h-[400px] w-full max-w-[400px]"
-          width={400}
-          height={400}
+          width={500}
+          height={500}
         />
       </Link>
     </div>

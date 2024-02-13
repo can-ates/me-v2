@@ -25,6 +25,17 @@ import Avatar from '../components/Avatar';
 import Circles from '../components/Circles';
 import { fadeIn } from '../constants/variants';
 
+type itemTypes =
+  | {
+      title: string;
+      icons: JSX.Element[];
+      stage: string;
+    }
+  | {
+      title: string;
+      stage: string;
+      icons: never[];
+    };
 //  data
 const aboutData = [
   {
@@ -38,6 +49,7 @@ const aboutData = [
           <SiJavascript color="#FFFF00" />,
           <SiTypescript color="#01FFFF" />,
         ],
+        stage: '',
       },
       {
         title: 'Technologies',
@@ -56,6 +68,7 @@ const aboutData = [
           <SiWebpack color="#5599C8" />,
           <SiEslint />,
         ],
+        stage: '',
       },
     ],
   },
@@ -65,14 +78,17 @@ const aboutData = [
       {
         title: 'Front End Engineer @ Jotform',
         stage: 'Apr 2021 - Present',
+        icons: [],
       },
       {
         title: 'Front End Developer Intern @ Jotform',
         stage: 'Jan 2021 - Mar 2021',
+        icons: [],
       },
       {
         title: 'Front End Developer Intern @ VBT',
         stage: 'Jun 2019 - Aug 2019',
+        icons: [],
       },
     ],
   },
@@ -178,7 +194,7 @@ const About = () => {
             })}
           </div>
           <div className="flex flex-col items-center gap-y-2 py-2 xl:items-start xl:gap-y-4 xl:py-6">
-            {aboutData[index].info.map((item, itemIndex) => {
+            {aboutData[index].info.map((item: itemTypes, itemIndex) => {
               const dataSection = aboutData[index].title;
               return (
                 <div

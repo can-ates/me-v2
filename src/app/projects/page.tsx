@@ -31,8 +31,9 @@ const Work = () => {
               exit="hidden"
               className="mx-auto mb-4 max-w-[400px] xl:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              maiores distinctio modi veritatis nostrum tempore?
+              Here are some my projects that I leveraged many technologies.
+              Through the development of these projects, I have gained
+              invaluable experience and insights.
             </motion.p>
           </div>
           {/* slider */}
