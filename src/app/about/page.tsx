@@ -98,7 +98,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div className="mb-32 h-full bg-primary/30 py-32 text-center sm:mb-0 xl:text-left">
       <Circles />
       <motion.div
         variants={fadeIn('right', 0.2)}
@@ -193,7 +193,7 @@ const About = () => {
               );
             })}
           </div>
-          <div className="flex flex-col items-center gap-y-2 py-2 xl:items-start xl:gap-y-4 xl:py-6">
+          <div className="flex flex-col gap-y-2 py-2 xl:items-start xl:gap-y-4 xl:py-6">
             {aboutData[index].info.map((item: itemTypes, itemIndex) => {
               const dataSection = aboutData[index].title;
               return (
@@ -207,7 +207,7 @@ const About = () => {
                   >
                     {item.title}
                   </div>
-                  <div className="hidden md:flex">-</div>
+                  <div className="md:flex">-</div>
                   <div>{item.stage}</div>
                   <div className="flex gap-x-4"></div>
                   {/* icons */}
