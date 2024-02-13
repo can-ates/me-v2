@@ -214,6 +214,7 @@ const About = () => {
                   {item.icons?.map((icon, itemIndex) => {
                     return (
                       <div
+                        key={`${dataSection}-${itemIndex}`}
                         className={`${itemIndex === 0 ? '-ml-6' : ''} text-3xl text-white`}
                       >
                         {icon}
