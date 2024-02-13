@@ -19,7 +19,7 @@ export default function Home() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1"
+            className="h1 xl:mt-8"
           >
             Product-Driven <br />{' '}
             <span className="text-accent">Software Engineer</span>
@@ -30,14 +30,12 @@ export default function Home() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="mx-auto mb-10 max-w-sm xl:mx-0 xl:mb-16 xl:max-w-xl"
+            className="mx-auto mb-4 max-w-sm xl:mx-0 xl:mb-16 xl:max-w-xl"
           >
             Deeply passionate about front-end development, I've honed my skills
-            in JavaScript to create seamless, accessible user experiences. My
-            journey in tech is defined by a commitment to innovation,
-            mentorship, and a collaborative spirit. I continuously strive for
-            excellence, leveraging my product engineering background to push
-            boundaries.
+            in JavaScript to create seamless, accessible user experiences. I
+            continuously strive for excellence, leveraging my product
+            engineering background to push boundaries.
           </motion.p>
           {/* btn */}
           <div className="relative z-10 flex justify-center xl:hidden">

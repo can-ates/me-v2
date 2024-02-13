@@ -199,7 +199,7 @@ const About = () => {
               return (
                 <div
                   key={itemIndex}
-                  className="flex max-w-max flex-1 flex-col flex-wrap items-center gap-x-4 gap-y-4 text-white/60 md:flex-row"
+                  className="flex max-w-max flex-1 flex-wrap items-center gap-x-4 gap-y-4 text-white/60 md:flex-row"
                 >
                   {/* title */}
                   <div

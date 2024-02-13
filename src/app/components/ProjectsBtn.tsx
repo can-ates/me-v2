@@ -1,8 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { HiArrowRight } from 'react-icons/hi2';
-
 const ProjectsBtn = () => {
   return (
     <div className="mx-auto xl:mx-0">
@@ -14,9 +12,9 @@ const ProjectsBtn = () => {
         <Image
           src={'/my-resume.png'}
           alt=""
-          className="h-full max-h-[400px] w-full max-w-[400px]"
-          width={500}
-          height={500}
+          className="h-full max-h-[200px] w-full max-w-[200px]"
+          width={200}
+          height={200}
         />
       </Link>
     </div>
