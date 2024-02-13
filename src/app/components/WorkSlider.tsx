@@ -14,11 +14,33 @@ const workSlides = {
     {
       images: [
         {
+          title: 'Jotform Inbox',
+          path: '/inbox.png',
+          src: 'https://www.jotform.com/features/inbox/',
+          text: ['Jotform', 'Inbox'],
+        },
+        {
+          title: 'Jotform Builder',
+          path: '/form-builder.png',
+          src: 'https://www.jotform.com/features/form-builder/',
+          text: ['Jotform', 'Builder'],
+        },
+        {
+          title: 'Jotform PDF Editor',
+          path: '/pdf-editor.png',
+          src: 'https://www.jotform.com/products/pdf-editor/features/',
+          text: ['Jotform', 'PDF Editor'],
+        },
+        {
           title: 'Game Portal',
           path: '/gameportal.png',
           src: 'https://game-portal.vercel.app',
-          text: ['LIVE', 'PROJECT'],
+          text: ['Game', 'Portal'],
         },
+      ],
+    },
+    {
+      images: [
         {
           title: 'Tagly',
           path: '/tagly.png',
