@@ -2,12 +2,12 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import Transition from './Transition';
 
-const Motion: React.FunctionComponent = ({ children }) => {
+const Motion = (props: any) => {
   return (
     <AnimatePresence mode="wait">
       <motion.div className="h-full">
         <Transition />
-        {children}
+        {props.children}
       </motion.div>
     </AnimatePresence>
   );
